@@ -3,7 +3,9 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Lucen | Senior-Led Digital Marketing Consultancy in Dubai",
+  title: {
+    absolute: "Lucen | Senior-Led Digital Marketing Consultancy in Dubai",
+  },
   description:
     "Lucen helps ambitious brands cut through noise, fix broken growth systems, and turn traffic into revenue. SEO, AI search optimization, PPC, and tracking — done by senior operators.",
 };
