@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import HomeScrollEffects from "@/components/HomeScrollEffects";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -61,9 +62,10 @@ const industries = [
 export default function HomePage() {
   return (
     <>
+      <HomeScrollEffects />
       {/* Hero */}
       <section className="bg-ink text-zinc-50">
-        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
+        <div data-hero className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
           <p className="text-sm font-medium uppercase tracking-widest text-brand">
             Senior-led digital marketing consultancy
           </p>
@@ -98,7 +100,10 @@ export default function HomePage() {
       {/* Tagline strip */}
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <p className="text-center text-xl font-medium tracking-tight text-zinc-50 sm:text-2xl">
+          <p
+            data-reveal
+            className="text-center text-xl font-medium tracking-tight text-zinc-50 sm:text-2xl"
+          >
             Clarity first. Results second. Noise never.
           </p>
         </div>
@@ -106,14 +111,17 @@ export default function HomePage() {
 
       {/* Services */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+        <h2
+          data-reveal
+          className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl"
+        >
           What we do
         </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
+        <p data-reveal className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
           We focus on what actually drives results — from search visibility and
           paid media to tracking, data, and conversion performance.
         </p>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div data-reveal-group className="mt-12 grid gap-6 sm:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
@@ -133,10 +141,13 @@ export default function HomePage() {
       {/* How we work */}
       <section className="bg-white/[0.03]">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+          <h2
+            data-reveal
+            className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl"
+          >
             How we work
           </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-3">
+          <div data-reveal-group className="mt-12 grid gap-10 md:grid-cols-3">
             {principles.map((principle, index) => (
               <div key={principle.title}>
                 <p className="font-mono text-sm text-brand">
@@ -156,14 +167,17 @@ export default function HomePage() {
 
       {/* Industries */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+        <h2
+          data-reveal
+          className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl"
+        >
           Where we&apos;ve done it
         </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
+        <p data-reveal className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
           We&apos;ve fixed growth systems and built performance across sectors
           and borders.
         </p>
-        <ul className="mt-10 flex flex-wrap gap-3">
+        <ul data-reveal-group className="mt-10 flex flex-wrap gap-3">
           {industries.map((industry) => (
             <li
               key={industry}
@@ -177,7 +191,10 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="bg-ink text-zinc-50">
-        <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+        <div
+          data-reveal
+          className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28"
+        >
           <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
             Let&apos;s build a business that performs.
           </h2>
