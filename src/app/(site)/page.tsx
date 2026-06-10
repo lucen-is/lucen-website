@@ -62,9 +62,9 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-zinc-950 text-zinc-50">
+      <section className="bg-ink text-zinc-50">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
-          <p className="text-sm font-medium uppercase tracking-widest text-amber-400">
+          <p className="text-sm font-medium uppercase tracking-widest text-brand">
             Senior-led digital marketing consultancy
           </p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
@@ -79,7 +79,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+              className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
             >
               Book a call
             </Link>
@@ -96,9 +96,9 @@ export default function HomePage() {
       </section>
 
       {/* Tagline strip */}
-      <section className="border-b border-zinc-200">
+      <section className="border-b border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <p className="text-center text-xl font-medium tracking-tight text-zinc-950 sm:text-2xl">
+          <p className="text-center text-xl font-medium tracking-tight text-zinc-50 sm:text-2xl">
             Clarity first. Results second. Noise never.
           </p>
         </div>
@@ -106,10 +106,10 @@ export default function HomePage() {
 
       {/* Services */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
           What we do
         </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600">
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
           We focus on what actually drives results — from search visibility and
           paid media to tracking, data, and conversion performance.
         </p>
@@ -117,12 +117,12 @@ export default function HomePage() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-zinc-200 bg-white p-8"
+              className="rounded-2xl border border-white/10 bg-white/5 p-8"
             >
-              <h3 className="text-xl font-semibold tracking-tight text-zinc-950">
+              <h3 className="text-xl font-semibold tracking-tight text-zinc-50">
                 {service.title}
               </h3>
-              <p className="mt-3 leading-relaxed text-zinc-600">
+              <p className="mt-3 leading-relaxed text-zinc-400">
                 {service.description}
               </p>
             </div>
@@ -131,21 +131,21 @@ export default function HomePage() {
       </section>
 
       {/* How we work */}
-      <section className="bg-white">
+      <section className="bg-white/[0.03]">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             How we work
           </h2>
           <div className="mt-12 grid gap-10 md:grid-cols-3">
             {principles.map((principle, index) => (
               <div key={principle.title}>
-                <p className="font-mono text-sm text-amber-600">
+                <p className="font-mono text-sm text-brand">
                   0{index + 1}
                 </p>
-                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-950">
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-50">
                   {principle.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-zinc-600">
+                <p className="mt-3 leading-relaxed text-zinc-400">
                   {principle.description}
                 </p>
               </div>
@@ -156,10 +156,10 @@ export default function HomePage() {
 
       {/* Industries */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
           Where we&apos;ve done it
         </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600">
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
           We&apos;ve fixed growth systems and built performance across sectors
           and borders.
         </p>
@@ -167,7 +167,7 @@ export default function HomePage() {
           {industries.map((industry) => (
             <li
               key={industry}
-              className="rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700"
+              className="rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-zinc-300"
             >
               {industry}
             </li>
@@ -176,7 +176,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-zinc-950 text-zinc-50">
+      <section className="bg-ink text-zinc-50">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
             Let&apos;s build a business that performs.
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+              className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
             >
               Connect with us
             </Link>

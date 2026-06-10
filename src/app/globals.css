@@ -5,13 +5,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  /* Brand palette from lucen.is */
+  --color-brand: #00e5ff;
+  --color-brand-bright: #5eefff;
+  --color-ink: #001019;
+}
+
 body {
-  background: #fafaf9;
-  color: #18181b;
+  background: #001019;
+  color: #f4f4f5;
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 ::selection {
-  background: #fbbf24;
-  color: #18181b;
+  background: #00e5ff;
+  color: #001019;
 }

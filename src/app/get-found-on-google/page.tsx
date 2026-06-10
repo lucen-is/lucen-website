@@ -100,12 +100,12 @@ export default function GetFoundOnGooglePage() {
   return (
     <>
       {/* Minimal landing header */}
-      <header className="border-b border-zinc-200 bg-[#fafaf9]">
+      <header className="border-b border-white/10 bg-ink">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <Logo />
           <a
             href={gradeHref}
-            className="rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-800"
+            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
           >
             Grade your setup
           </a>
@@ -114,11 +114,11 @@ export default function GetFoundOnGooglePage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-zinc-950 text-zinc-50">
+        <section className="bg-ink text-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
               Search setup built for Google{" "}
-              <span className="text-amber-400">&amp;</span> AI.
+              <span className="text-brand">&amp;</span> AI.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400">
               Tracking, landing pages, and campaign structure designed to make
@@ -128,7 +128,7 @@ export default function GetFoundOnGooglePage() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href={gradeHref}
-                className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+                className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
               >
                 Grade your setup
               </a>
@@ -156,22 +156,22 @@ export default function GetFoundOnGooglePage() {
 
         {/* Problems */}
         <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+          <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             Why most ad accounts underperform
           </h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600">
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
             It&apos;s rarely the budget. It&apos;s the setup underneath it.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {problems.map((problem) => (
               <div
                 key={problem.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-7"
+                className="rounded-2xl border border-white/10 bg-white/5 p-7"
               >
-                <h3 className="text-lg font-semibold tracking-tight text-zinc-950">
+                <h3 className="text-lg font-semibold tracking-tight text-zinc-50">
                   {problem.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                   {problem.description}
                 </p>
               </div>
@@ -180,12 +180,12 @@ export default function GetFoundOnGooglePage() {
         </section>
 
         {/* Strong setup */}
-        <section className="bg-white">
+        <section className="bg-white/[0.03]">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-            <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+            <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
               What a strong setup looks like
             </h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600">
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
               Eight components, each one checked, fixed, and built to work
               together.
             </p>
@@ -193,12 +193,12 @@ export default function GetFoundOnGooglePage() {
               {setupComponents.map((component, index) => (
                 <li
                   key={component}
-                  className="rounded-xl border border-zinc-200 p-5"
+                  className="rounded-xl border border-white/10 p-5"
                 >
-                  <p className="font-mono text-xs text-amber-600">
+                  <p className="font-mono text-xs text-brand">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <p className="mt-2 font-semibold tracking-tight text-zinc-950">
+                  <p className="mt-2 font-semibold tracking-tight text-zinc-50">
                     {component}
                   </p>
                 </li>
@@ -209,19 +209,19 @@ export default function GetFoundOnGooglePage() {
 
         {/* Process */}
         <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             How we work
           </h2>
           <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (
               <div key={step.title}>
-                <p className="font-mono text-sm text-amber-600">
+                <p className="font-mono text-sm text-brand">
                   0{index + 1}
                 </p>
-                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-950">
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-50">
                   {step.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                <p className="mt-3 text-sm leading-relaxed text-zinc-400">
                   {step.description}
                 </p>
               </div>
@@ -230,18 +230,18 @@ export default function GetFoundOnGooglePage() {
         </section>
 
         {/* Benefits */}
-        <section className="bg-white">
+        <section className="bg-white/[0.03]">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-            <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+            <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
               What better setup gets you
             </h2>
             <ul className="mt-10 grid gap-x-12 gap-y-4 sm:grid-cols-2">
               {benefits.map((benefit) => (
                 <li
                   key={benefit}
-                  className="flex items-start gap-3 text-lg text-zinc-700"
+                  className="flex items-start gap-3 text-lg text-zinc-300"
                 >
-                  <span aria-hidden className="mt-1 text-amber-500">
+                  <span aria-hidden className="mt-1 text-brand">
                     ✓
                   </span>
                   {benefit}
@@ -252,7 +252,7 @@ export default function GetFoundOnGooglePage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-zinc-950 text-zinc-50">
+        <section className="bg-ink text-zinc-50">
           <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
               Find out what your setup is costing you.
@@ -264,7 +264,7 @@ export default function GetFoundOnGooglePage() {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <a
                 href={gradeHref}
-                className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+                className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
               >
                 Grade your setup
               </a>
@@ -282,8 +282,8 @@ export default function GetFoundOnGooglePage() {
       </main>
 
       {/* Lean landing footer */}
-      <footer className="bg-zinc-950 text-zinc-500">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 border-t border-zinc-800 px-4 py-10 text-sm sm:px-6">
+      <footer className="bg-ink text-zinc-500">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 border-t border-white/10 px-4 py-10 text-sm sm:px-6">
           <p className="text-zinc-300">
             Google Partner · Microsoft Advertising Partner · IFZA Licensed
           </p>

@@ -28,9 +28,9 @@ const standards = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-zinc-950 text-zinc-50">
+      <section className="bg-ink text-zinc-50">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
-          <p className="text-sm font-medium uppercase tracking-widest text-amber-400">
+          <p className="text-sm font-medium uppercase tracking-widest text-brand">
             About Lucen
           </p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
@@ -48,30 +48,30 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
         <div className="grid gap-16 md:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight text-zinc-950">
+            <h2 className="text-3xl font-semibold tracking-tight text-zinc-50">
               Our mission
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-zinc-600">
+            <p className="mt-5 text-lg leading-relaxed text-zinc-400">
               Our mission is to help businesses grow by making smarter
               marketing decisions. We focus on what actually drives results —
               from search visibility and paid media to tracking, data, and
               conversion performance.
             </p>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-600">
+            <p className="mt-4 text-lg leading-relaxed text-zinc-400">
               Every recommendation is tied to a commercial outcome, not a
               slide deck.
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight text-zinc-950">
+            <h2 className="text-3xl font-semibold tracking-tight text-zinc-50">
               Our vision
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-zinc-600">
+            <p className="mt-5 text-lg leading-relaxed text-zinc-400">
               Our vision is to build a consultancy known for precision and
               accountability — a partner businesses trust when growth matters
               and guesswork is not an option.
             </p>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-600">
+            <p className="mt-4 text-lg leading-relaxed text-zinc-400">
               We aim to set a higher standard for how digital marketing should
               be planned, executed, and measured.
             </p>
@@ -79,21 +79,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white/[0.03]">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             The standard we hold ourselves to
           </h2>
           <div className="mt-12 grid gap-10 md:grid-cols-3">
             {standards.map((standard, index) => (
               <div key={standard.title}>
-                <p className="font-mono text-sm text-amber-600">
+                <p className="font-mono text-sm text-brand">
                   0{index + 1}
                 </p>
-                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-950">
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-50">
                   {standard.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-zinc-600">
+                <p className="mt-3 leading-relaxed text-zinc-400">
                   {standard.description}
                 </p>
               </div>
@@ -103,17 +103,17 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
           Growth shouldn&apos;t be a guessing game.
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-zinc-600">
+        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-zinc-400">
           If you want a partner who measures what matters and owns the
           outcome, let&apos;s talk.
         </p>
         <div className="mt-10">
           <Link
             href="/contact"
-            className="rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-zinc-50 transition-colors hover:bg-zinc-800"
+            className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-bright"
           >
             Get in touch
           </Link>

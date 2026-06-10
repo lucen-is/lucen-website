@@ -4,11 +4,11 @@ import { site } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-950 text-zinc-400">
+    <footer className="border-t border-white/10 bg-black/30 text-zinc-400">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <Logo light />
+            <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               {site.tagline}
             </p>
@@ -39,7 +39,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${site.email}`}
-                  className="transition-colors hover:text-zinc-50"
+                  className="transition-colors hover:text-brand"
                 >
                   {site.email}
                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <a
                   href={site.phoneHref}
-                  className="transition-colors hover:text-zinc-50"
+                  className="transition-colors hover:text-brand"
                 >
                   {site.phone}
                 </a>
@@ -57,7 +57,7 @@ export default function Footer() {
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-zinc-50"
+                  className="transition-colors hover:text-brand"
                 >
                   WhatsApp us
                 </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                   href={site.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-zinc-50"
+                  className="transition-colors hover:text-brand"
                 >
                   Instagram
                 </a>
@@ -75,17 +75,17 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 flex flex-col gap-4 border-t border-zinc-800 pt-8 text-xs sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {site.legalName}. All rights reserved.
           </p>
           <nav className="flex gap-6">
-            <Link href="/about" className="transition-colors hover:text-zinc-50">
+            <Link href="/about" className="transition-colors hover:text-brand">
               About
             </Link>
             <Link
               href="/contact"
-              className="transition-colors hover:text-zinc-50"
+              className="transition-colors hover:text-brand"
             >
               Contact
             </Link>

@@ -31,9 +31,9 @@ const methods = [
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-zinc-950 text-zinc-50">
+      <section className="bg-ink text-zinc-50">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
-          <p className="text-sm font-medium uppercase tracking-widest text-amber-400">
+          <p className="text-sm font-medium uppercase tracking-widest text-brand">
             Contact
           </p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
@@ -56,27 +56,27 @@ export default function ContactPage() {
               {...(method.href.startsWith("http")
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="group rounded-2xl border border-zinc-200 bg-white p-8 transition-colors hover:border-zinc-400"
+              className="group rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors hover:border-brand/60"
             >
-              <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-500">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-400">
                 {method.label}
               </h2>
-              <p className="mt-3 text-lg font-semibold tracking-tight text-zinc-950 group-hover:underline">
+              <p className="mt-3 text-lg font-semibold tracking-tight text-zinc-50 group-hover:underline">
                 {method.value}
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+              <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                 {method.note}
               </p>
             </a>
           ))}
         </div>
 
-        <div className="mt-16 grid gap-12 border-t border-zinc-200 pt-16 md:grid-cols-2">
+        <div className="mt-16 grid gap-12 border-t border-white/10 pt-16 md:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
+            <h2 className="text-2xl font-semibold tracking-tight text-zinc-50">
               Office
             </h2>
-            <address className="mt-4 text-lg not-italic leading-relaxed text-zinc-600">
+            <address className="mt-4 text-lg not-italic leading-relaxed text-zinc-400">
               {site.legalName}
               <br />
               {site.address.line1}
@@ -87,16 +87,16 @@ export default function ContactPage() {
             </address>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
+            <h2 className="text-2xl font-semibold tracking-tight text-zinc-50">
               Elsewhere
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-zinc-600">
+            <p className="mt-4 text-lg leading-relaxed text-zinc-400">
               Follow the work on{" "}
               <a
                 href={site.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-zinc-950 underline underline-offset-4 hover:text-amber-600"
+                className="font-medium text-brand underline underline-offset-4 hover:text-brand-bright"
               >
                 Instagram
               </a>
